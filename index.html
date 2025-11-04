@@ -46,7 +46,7 @@
             height: auto;
             border: 2px solid #ccc;
             padding: 5px;
-            margin: 0 auto;
+            margin: 0 auto 10px auto;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         div.gallery-item {
@@ -56,6 +56,13 @@
             padding: 12px;
             margin: 15px;
             box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+        div.gallery-item a {
+            display: block;
+            margin-top: 5px;
+            font-weight: bold;
+            color: #2a5d9f;
         }
         .main-grid {
             display: grid;
@@ -65,6 +72,7 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
+            justify-items: center;
         }
     </style>
 </head>
