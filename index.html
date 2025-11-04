@@ -29,6 +29,11 @@
             color: #8B0000;
             text-decoration: none;
         }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
         nav.navigation {
             background-color: #faf5dc;
             border: 2px solid #e0d6aa;
@@ -37,10 +42,11 @@
         }
         div.gallery-item img {
             /* this selector applies to all <img> tags that are within a <div class="gallery-item"> */
-            width: 100%;
+            width: 80%;
             height: auto;
             border: 2px solid #ccc;
             padding: 5px;
+            margin: 0 auto;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         div.gallery-item {
@@ -55,6 +61,11 @@
             display: grid;
             grid-template-columns: 25% auto;
         }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
     </style>
 </head>
 <body>
@@ -63,14 +74,15 @@
     </header>
     <div class="main-grid">
         <nav class="navigation">
-            <ol>
+            <ul>
                 <li><a href="#spanish-art">Spanish Art</a></li>
                 <li><a href="#italian-art">Italian Art</a></li>
                 <li><a href="#original-art">Original Art</a></li>
-            </ol>
+            </ul>
         </nav>
         <main>
             <h2 id="spanish-art">Spanish Art</h2>
+            <div class="gallery-grid">
             <div class="gallery-item">
                 <img src="/images/79.1972 - El Zocodover, Toledo, Spain.jpg" alt="">
                 <a href="https://www.artic.edu/artworks/118979/el-zocodover-toledo-spain
@@ -92,7 +104,9 @@
                 <a href="https://www.artic.edu/artworks/25790/the-adoration-of-the-eucharist">The Adoration of the Eucharist</a>
                 <figcaption> Peter Paul Rubens's The Adoration of the Eucharist is an oil sketch for a tapestry series commissioned by Archduchess Isabella Clara Eugenia for the Convent of Las Descalzas Reales in Madrid. It depicts heavenly and earthly figures worshipping the Eucharist, with the archduchess included in the lower left, demonstrating her piety and role as a patron. </figcaption>
             </div>
+            </div>
             <h2 id="italian-art">Italian Art</h2>
+            <div class="gallery-grid">
             <div class="gallery-item">
                 <img src="/images/1991.295 - The Abduction of the Sabine Women.jpg" alt="">
                 <a href="https://www.artic.edu/artworks/111620/the-abduction-of-the-sabine-women">The Abduction of the Sabine Women</a>
@@ -117,6 +131,7 @@
                 <img src="/images/1961.43 - Theodosius Repulsed from the Church by Saint....jpg" alt="">
                 <a href="https://www.artic.edu/artworks/12891/theodosius-repulsed-from-the-church-by-saint-ambrose">Theodosius Repulsed from the Church by Saint Ambrose</a>
                 <figcaption> Alessandro Magnasco (Italian, 1700–1710), Theodosius Repulsed from the Church by Saint Ambrose. Oil on canvas. This painting depicts the historical confrontation between Archbishop Ambrose and Emperor Theodosius I in 390. Magnasco's fluid, energetic style is evident in the figures, while the elaborate architectural background was likely painted by an unidentified specialist. </figcaption>
+            </div>
             </div>
             <h2 id="original-art">Original Art</h2>
             <svg 
