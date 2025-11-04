@@ -5,20 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Lab</title>
     <style>
-      h1 {
-        /* styles here will be applied to all <h1> tags */
-        background-color: #FFF8DC;
-        color: #8B0000;
-        font-size: large;
+        body {
+            background-color: #dce3ea;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            /* styles here will be applied to all <h1> tags */
+            background-color: #f8e8b8;
+            color: #8B0000;
+            font-family: "Georgia", serif;
+            font-size: 2.5em;
+            padding: 10px;
         }
         nav li {
             /* styles here would only affect <li> that are within nav */
             padding: 10px 15px;
             margin: 25px 50px;
+            background-color: #f6f1d1;
         }
         nav li a {
             /* similarly, this selector only targets <a> within <li> within <nav> */
+            color: #8B0000;
             text-decoration: none;
+        }
+        nav.navigation {
+            background-color: #faf5dc;
+            border: 2px solid #e0d6aa;
+            border-radius: 10px;
+            padding: 15px;
         }
         div.gallery-item img {
             /* this selector applies to all <img> tags that are within a <div class="gallery-item"> */
@@ -27,6 +42,14 @@
             border: 2px solid #ccc;
             padding: 5px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        div.gallery-item {
+            background-color: #f8fafc;
+            border: 2px solid #b0bcc9;
+            border-radius: 10px;
+            padding: 12px;
+            margin: 15px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
         }
         .main-grid {
             display: grid;
@@ -39,73 +62,73 @@
         <h1 id="">Tina's Favorite Art Institute Collection</h1>
     </header>
     <div class="main-grid">
-    <nav class="navigation">
-        <ol>
-            <li class="navigation"><a href="Spanish Art">Spanish Art</a></li>
-            <li class="navigation"><a href="#Italian Art">Italian Art</a></li>
-            <li class="navigation"><a href="#Original">Original Art</a></li>
-        </ol>
-    </nav>
-    <main>
-        <h2 id="Spanish Art">Spanish Art</h2>
-        <div class="gallery-item">
-            <img src="/images/79.1972 - El Zocodover, Toledo, Spain" alt="">
-            <a href="https://www.artic.edu/artworks/118979/el-zocodover-toledo-spain
-">El Zocodover Toledo, Spain</a>
-            <figcaption> Childe Hassam, El Zocodover, Toledo, Spain, 1910, oil on board. This painting, created by the American Impressionist artist Childe Hassam during a European trip, captures a lively public square in Spain with his signature energetic brushwork and vibrant colors. </figcaption>
-        </div>
-        <div class="gallery-item">
-            <img src="/images/1894.1053 - Spain" alt="">
-            <a href="https://www.artic.edu/artworks/111624/spain">Spain</a>
-            <figcaption> A Spanish oil painting by Francisco Domingo y Marqués from 1878, titled Spain, created on panel. </figcaption>
-        </div>
-        <div class="gallery-item">
-            <img src="/images/1937.1019 - Bullfight" alt="">
-            <a href="https://www.artic.edu/artworks/25812/bullfight">Bullfight</a>
-            <figcaption> Édouard Manet's "Bullfight" captures the intense spectacle that profoundly inspired him during a brief 1865 trip to Madrid. The painting uses blurred background figures to draw focus to the sharp standoff between the bullfighter and the bull, highlighting the "most terrifying" sight Manet described to Baudelaire. </figcaption>
-        </div>
-        <div class="gallery-item">
-            <img src="/images/1937.1012 - The Adoration of the Eucharist" alt="">
-            <a href="https://www.artic.edu/artworks/25790/the-adoration-of-the-eucharist">The Adoration of the Eucharist</a>
-            <figcaption> Peter Paul Rubens's The Adoration of the Eucharist is an oil sketch for a tapestry series commissioned by Archduchess Isabella Clara Eugenia for the Convent of Las Descalzas Reales in Madrid. It depicts heavenly and earthly figures worshipping the Eucharist, with the archduchess included in the lower left, demonstrating her piety and role as a patron. </figcaption>
-        </div>
-        <h2 id="Italian Art">Italian Art</h2>
-        <div class="gallery-item">
-            <img src="/images/1991.295 - The Abduction of the Sabine Women" alt="">
-            <a href="https://www.artic.edu/artworks/111620/the-abduction-of-the-sabine-women">The Abduction of the Sabine Women</a>
-            <figcaption> Luca Giordano's The Abduction of the Sabine Women is a late 17th-century oil painting that depicts the myth of Rome's founding. The artwork is known for its theatrical, geometrically complex composition, created with the rapid, bold brushwork that earned Giordano the nickname "Luca fa presto" (Luca paints quickly).  </figcaption>
-        </div>
-        <div class="gallery-item">
-            <img src="/images/1887.232 - Interior of St. Mark's, Venice" alt="">
-            <a href="https://www.artic.edu/artworks/9/interior-of-st-mark-s-venice">Interior of St. Mark's, Venice</a>
-            <figcaption> "Interior of St. Mark's, Venice" is an 1869 oil on canvas painting by the American artist David Dalhoff Neal. </figcaption>
-        </div>
-        <div class="gallery-item">
-            <img src="/images/2013.1094 - Inside the Colosseum" alt="">
-            <a href="https://www.artic.edu/artworks/219254/inside-the-colosseum">Inside the Colosseum</a>
-            <figcaption> In Franz Ludwig Catel's 1818-1828 oil painting, a shaft of sunlight illuminates figures inside the Colosseum, representing the beginning of its restoration. Architect Giuseppe Valadier presents plans to Cardinal Ercole Consalvi while workers haul rubble, symbolizing the effort to restore the ancient structure. </figcaption>
-        </div>
-        <div class="gallery-item">
-            <img src="/images/1999.383 - The Imperial Palace on the Palatine, Rome" alt="">
-            <a href="https://www.artic.edu/artworks/152850/the-imperial-palace-on-the-palatine-rome">The Imperial Palace on the Palatine, Rome</a>
-            <figcaption> Paul-Jean Flandrin (French, 1811-1902). The Imperial Palace on the Palatine, Rome, 1834. Oil on card. </figcaption>
-        </div>
-        <div class="gallery-item">
-            <img src="/images/1961.43 - Theodosius Repulsed from the Church by Saint..." alt="">
-            <a href="https://www.artic.edu/artworks/12891/theodosius-repulsed-from-the-church-by-saint-ambrose">Theodosius Repulsed from the Church by Saint Ambrose</a>
-            <figcaption> Alessandro Magnasco (Italian, 1700–1710), Theodosius Repulsed from the Church by Saint Ambrose. Oil on canvas. This painting depicts the historical confrontation between Archbishop Ambrose and Emperor Theodosius I in 390. Magnasco's fluid, energetic style is evident in the figures, while the elaborate architectural background was likely painted by an unidentified specialist. </figcaption>
-        </div>
-        <h2 id="Original Art">Original Art</h2>
-        <svg 
-            viewBox="0 0 300 300" 
-            xmlns="http://www.w3.org/2000/svg">
-                <circle r="45" fill="blue"/>
-                <ellipse fill="green"/>
-                <line fill="red"/>
-                <rect width="200" height="100" fill="blue"/>
-                <polygon points="100,10 150,190 50,190"/>
-        </svg>
-    </main>
+        <nav class="navigation">
+            <ol>
+                <li><a href="#spanish-art">Spanish Art</a></li>
+                <li><a href="#italian-art">Italian Art</a></li>
+                <li><a href="#original-art">Original Art</a></li>
+            </ol>
+        </nav>
+        <main>
+            <h2 id="spanish-art">Spanish Art</h2>
+            <div class="gallery-item">
+                <img src="/images/79.1972 - El Zocodover, Toledo, Spain.jpg" alt="">
+                <a href="https://www.artic.edu/artworks/118979/el-zocodover-toledo-spain
+    ">El Zocodover Toledo, Spain</a>
+                <figcaption> Childe Hassam, El Zocodover, Toledo, Spain, 1910, oil on board. This painting, created by the American Impressionist artist Childe Hassam during a European trip, captures a lively public square in Spain with his signature energetic brushwork and vibrant colors. </figcaption>
+            </div>
+            <div class="gallery-item">
+                <img src="/images/1894.1053 - Spain.jpg" alt="">
+                <a href="https://www.artic.edu/artworks/111624/spain">Spain</a>
+                <figcaption> A Spanish oil painting by Francisco Domingo y Marqués from 1878, titled Spain, created on panel. </figcaption>
+            </div>
+            <div class="gallery-item">
+                <img src="/images/1937.1019 - Bullfight.jpg" alt="">
+                <a href="https://www.artic.edu/artworks/25812/bullfight">Bullfight</a>
+                <figcaption> Édouard Manet's "Bullfight" captures the intense spectacle that profoundly inspired him during a brief 1865 trip to Madrid. The painting uses blurred background figures to draw focus to the sharp standoff between the bullfighter and the bull, highlighting the "most terrifying" sight Manet described to Baudelaire. </figcaption>
+            </div>
+            <div class="gallery-item">
+                <img src="/images/1937.1012 - The Adoration of the Eucharist.jpg" alt="">
+                <a href="https://www.artic.edu/artworks/25790/the-adoration-of-the-eucharist">The Adoration of the Eucharist</a>
+                <figcaption> Peter Paul Rubens's The Adoration of the Eucharist is an oil sketch for a tapestry series commissioned by Archduchess Isabella Clara Eugenia for the Convent of Las Descalzas Reales in Madrid. It depicts heavenly and earthly figures worshipping the Eucharist, with the archduchess included in the lower left, demonstrating her piety and role as a patron. </figcaption>
+            </div>
+            <h2 id="italian-art">Italian Art</h2>
+            <div class="gallery-item">
+                <img src="/images/1991.295 - The Abduction of the Sabine Women.jpg" alt="">
+                <a href="https://www.artic.edu/artworks/111620/the-abduction-of-the-sabine-women">The Abduction of the Sabine Women</a>
+                <figcaption> Luca Giordano's The Abduction of the Sabine Women is a late 17th-century oil painting that depicts the myth of Rome's founding. The artwork is known for its theatrical, geometrically complex composition, created with the rapid, bold brushwork that earned Giordano the nickname "Luca fa presto" (Luca paints quickly).  </figcaption>
+            </div>
+            <div class="gallery-item">
+                <img src="/images/1887.232 - Interior of St. Mark's, Venice.jpg" alt="">
+                <a href="https://www.artic.edu/artworks/9/interior-of-st-mark-s-venice">Interior of St. Mark's, Venice</a>
+                <figcaption> "Interior of St. Mark's, Venice" is an 1869 oil on canvas painting by the American artist David Dalhoff Neal. </figcaption>
+            </div>
+            <div class="gallery-item">
+                <img src="/images/2013.1094 - Inside the Colosseum.jpg" alt="">
+                <a href="https://www.artic.edu/artworks/219254/inside-the-colosseum">Inside the Colosseum</a>
+                <figcaption> In Franz Ludwig Catel's 1818-1828 oil painting, a shaft of sunlight illuminates figures inside the Colosseum, representing the beginning of its restoration. Architect Giuseppe Valadier presents plans to Cardinal Ercole Consalvi while workers haul rubble, symbolizing the effort to restore the ancient structure. </figcaption>
+            </div>
+            <div class="gallery-item">
+                <img src="/images/1999.383 - The Imperial Palace on the Palatine, Rome.jpg" alt="">
+                <a href="https://www.artic.edu/artworks/152850/the-imperial-palace-on-the-palatine-rome">The Imperial Palace on the Palatine, Rome</a>
+                <figcaption> Paul-Jean Flandrin (French, 1811-1902). The Imperial Palace on the Palatine, Rome, 1834. Oil on card. </figcaption>
+            </div>
+            <div class="gallery-item">
+                <img src="/images/1961.43 - Theodosius Repulsed from the Church by Saint....jpg" alt="">
+                <a href="https://www.artic.edu/artworks/12891/theodosius-repulsed-from-the-church-by-saint-ambrose">Theodosius Repulsed from the Church by Saint Ambrose</a>
+                <figcaption> Alessandro Magnasco (Italian, 1700–1710), Theodosius Repulsed from the Church by Saint Ambrose. Oil on canvas. This painting depicts the historical confrontation between Archbishop Ambrose and Emperor Theodosius I in 390. Magnasco's fluid, energetic style is evident in the figures, while the elaborate architectural background was likely painted by an unidentified specialist. </figcaption>
+            </div>
+            <h2 id="original-art">Original Art</h2>
+            <svg 
+                viewBox="0 0 300 300" 
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="70" cy="70" r="45" fill="blue" />
+                <ellipse cx="200" cy="80" rx="40" ry="25" fill="green" />
+                <line x1="30" y1="200" x2="270" y2="200" stroke="red" stroke-width="4" />
+                <rect x="50" y="120" width="200" height="100" fill="blue" opacity="0.5" />
+                <polygon points="150,30 190,120 110,120" fill="gold" />
+            </svg>
+        </main>
     </div>
 </body>
 </html>
