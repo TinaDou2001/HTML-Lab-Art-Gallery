@@ -28,12 +28,17 @@
             padding: 5px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
+        .main-grid {
+            display: grid;
+            grid-template-columns: 25% auto;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1 id="">Tina's Favorite Art Institute Collection</h1>
     </header>
+    <div class="main-grid">
     <nav class="navigation">
         <ol>
             <li class="navigation"><a href="Spanish Art">Spanish Art</a></li>
@@ -91,6 +96,16 @@
             <figcaption> Alessandro Magnasco (Italian, 1700–1710), Theodosius Repulsed from the Church by Saint Ambrose. Oil on canvas. This painting depicts the historical confrontation between Archbishop Ambrose and Emperor Theodosius I in 390. Magnasco's fluid, energetic style is evident in the figures, while the elaborate architectural background was likely painted by an unidentified specialist. </figcaption>
         </div>
         <h2 id="Original Art">Original Art</h2>
+        <svg 
+            viewBox="0 0 300 300" 
+            xmlns="http://www.w3.org/2000/svg">
+                <circle r="45" fill="blue"/>
+                <ellipse fill="green"/>
+                <line fill="red"/>
+                <rect width="200" height="100" fill="blue"/>
+                <polygon points="100,10 150,190 50,190"/>
+        </svg>
     </main>
+    </div>
 </body>
 </html>
